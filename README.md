@@ -1,5 +1,5 @@
 # Snake
-Playing Snake with C++ porting it to use Python for UI.
+Playing Snake with C++ with Python port for UI.
 
 ## Prerequisites
 
