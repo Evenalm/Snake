@@ -26,7 +26,7 @@ Under the folder Benchmark there is an executeble for basic unit tests and for b
 
 Should look like this when done correctly:
 
-<img src="images/RunningApplication.PNG" width="500">
+<img src="images/RunningApplication.PNG" width="600">
 
 ## Built With
 
