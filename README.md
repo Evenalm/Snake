@@ -26,7 +26,7 @@ Under the folder Benchmark there is an executeble for basic unit tests and for b
 
 Should look like this when done correctly:
 ![](images/RunningApplication.PNG)
-
+<img src="images/RunningApplication.PNG" width="200">
 ## Built With
 
 * [pybind11](https://pybind11.readthedocs.io/en/stable/)
