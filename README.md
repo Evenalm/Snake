@@ -25,8 +25,8 @@ Already having a cmd window open helps, as this will not start the python GUI.
 Under the folder Benchmark there is an executeble for basic unit tests and for benchmarking various aspects of the application. 
 
 Should look like this when done correctly:
-![](images/RunningApplication.PNG)
-<img src="images/RunningApplication.PNG" width="200">
+<img src="images/RunningApplication.PNG" width="500">
+
 ## Built With
 
 * [pybind11](https://pybind11.readthedocs.io/en/stable/)
