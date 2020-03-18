@@ -1,5 +1,5 @@
 # Snake
-Playing Snake with C++ porting it to use Python for UI.
+Playing Snake with C++ with Python port for UI.
 
 ## Prerequisites
 
@@ -25,7 +25,8 @@ Already having a cmd window open helps, as this will not start the python GUI.
 Under the folder Benchmark there is an executeble for basic unit tests and for benchmarking various aspects of the application. 
 
 Should look like this when done correctly:
-![alt text](images/RunningApplication.png)
+
+<img src="images/RunningApplication.PNG" width="600">
 
 ## Built With
 
