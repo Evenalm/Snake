@@ -1,5 +1,5 @@
-#ifndef ConsoleMinimalist_H
-#define ConsoleMinimalist_H
+#ifndef CONSOLE_MINIMALIST_H
+#define CONSOLE_MINIMALIST_H
 
 #include "MoveMaker.h"
 
@@ -14,4 +14,4 @@ class ConsoleMinimalist : public MoveMaker
         GameState::Move moveMade;
 };
 
-#endif // ConsoleMinimalist_H
+#endif // CONSOLE_MINIMALIST_H

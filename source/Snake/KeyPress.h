@@ -1,5 +1,5 @@
-#ifndef KeyPress_H
-#define KeyPress_H
+#ifndef KEY_PRESS_H
+#define KEY_PRESS_H
 
 enum class KeyPress
 {
@@ -9,4 +9,4 @@ enum class KeyPress
     Right = 77
 };
 
-#endif // KeyPress_H 
+#endif // KEY_PRESS_H 

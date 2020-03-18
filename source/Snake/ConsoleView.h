@@ -1,5 +1,5 @@
-#ifndef ConsoleView_H
-#define ConsoleView_H
+#ifndef CONSOLE_VIEW_H
+#define CONSOLE_VIEW_H
 
 #include "Viewer.h"
 
@@ -13,5 +13,5 @@ class ConsoleView : public Viewer
         virtual void displayLosingMessage(GameState& state) override;
 };
 
-#endif // ConsoleView_H
+#endif // CONSOLE_VIEW_H
 

@@ -1,5 +1,5 @@
-#ifndef GameState_H
-#define GameState_H
+#ifndef GAME_STATE_H
+#define GAME_STATE_H
 
 #include <deque>
 #include <vector>
@@ -50,4 +50,4 @@ const Point InvalidGamePoint = { USHRT_MAX, USHRT_MAX };
 Point GetNextPoint(Point position, GameState::Move move);
 GameState::Move GetMinimalistMove(GameState::Orientation orientation, GameState::Move move);
 
-#endif // GameState_H
+#endif // GAME_STATE_H

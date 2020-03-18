@@ -1,5 +1,5 @@
-#ifndef ConsoleMoveMaker_H
-#define ConsoleMoveMaker_H
+#ifndef CONSOLE_MOVE_MAKER_H
+#define CONSOLE_MOVE_MAKER_H
 
 #include "MoveMaker.h"
 
@@ -14,5 +14,5 @@ class ConsoleMoveMaker : public MoveMaker
         GameState::Move moveMade;
 };
 
-#endif // ConsoleMoveMaker_H
+#endif // CONSOLE_MOVE_MAKER_H
 

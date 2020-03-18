@@ -1,5 +1,5 @@
-#ifndef HamiltonianPath_H
-#define HamiltonianPath_H
+#ifndef HAMILTONIAN_PATH_H
+#define HAMILTONIAN_PATH_H
 
 #include "MoveMaker.h"
 
@@ -16,4 +16,4 @@ class HamiltonianPath :	public MoveMaker
 		bool goForFruitOnReturnPath;
 };
 
-#endif // HamiltonianPath_H
+#endif // HAMILTONIAN_PATH_H

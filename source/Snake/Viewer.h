@@ -1,5 +1,5 @@
-#ifndef Viewer_H
-#define Viewer_H
+#ifndef VIEWER_H
+#define VIEWER_H
 
 #include <string>
 #include "GameState.h"
@@ -14,4 +14,4 @@ class Viewer
       virtual void displayLosingMessage(GameState& state) = 0;
 };
 
-#endif // Viewer_H
+#endif // VIEWER_H

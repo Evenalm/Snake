@@ -1,5 +1,5 @@
-#ifndef MoveMaker_H
-#define MoveMaker_H
+#ifndef MOVE_MAKER_H
+#define MOVE_MAKER_H
 
 #include "GameState.h"
 
@@ -10,5 +10,5 @@ class MoveMaker
       virtual void Reset() = 0;
 };
 
-#endif // MoveMaker_H
+#endif // MOVE_MAKER_H
 
