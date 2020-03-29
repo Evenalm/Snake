@@ -8,6 +8,7 @@ Playing Snake with C++ and a Python port for UI.
 * [arcade](https://arcade.academy/#) (pip install)
 * [googletest](https://github.com/google/googletest) (Integrated in VS)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/) ([Download page](https://visualstudio.microsoft.com/vs/))
+* VS needs the package: Python native development tools, get it from VS installer.
 * [pyinstaller](https://www.pyinstaller.org/) (pip install)
 * [Python 32bit interpeter](https://www.python.org/downloads/)
 
