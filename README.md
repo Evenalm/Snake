@@ -17,7 +17,7 @@ Very helpfull guide for combining C++ and Python in VS: [Create a C++ extension 
 ## Installing
 1. Download from personal Github [Evenalm](https://github.com/Evenalm/Snake/)
 
-1. Change Python interpeter:
+1. Change Python 32bit interpeter:
    1. in PythonSnake.sln -> PythonGui -> Python Environments -> Right click -> Add environments...
    1. in PythonSnake.sln -> SnakePort -> properties -> configuration properties -> C/C++ 
       -> General -> Additional Include Directories: Change location of python include folder path to yours
