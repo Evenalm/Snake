@@ -29,6 +29,11 @@ Very helpfull guide for combining C++ and Python in VS: [Create a C++ extension 
 Run batch script BuildAll.bat
 
 1. Main game: Run batch script PlayGame.bat
+
+Should look like this when done correctly:
+
+<img src="images/RunningApplication.PNG" width="600">
+
 2. Unit tests: Executable found under Release folder
 3. Debug with console scripts are in DebugConsoleScripts folder
 
