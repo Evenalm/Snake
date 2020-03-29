@@ -1,5 +1,5 @@
 # Snake
-Playing Snake with C++ with Python port for UI.
+Playing Snake with C++ and a Python port for UI.
 
 ## Prerequisites
 * [pybind11](https://pybind11.readthedocs.io/en/stable/) ([github](https://github.com/pybind/pybind11))
@@ -26,13 +26,11 @@ Very helpfull guide for combining C++ and Python in VS: [Create a C++ extension 
    1. In CleanAll.bat replace folder path VSDEVDIR with your path
 
 ## Run and bould
-Run batch script: BuildAll.bat
+Run batch script BuildAll.bat
 
-Run Batch script: PlayGame.bat
-
-Should look like this when done correctly:
-
-<img src="images/RunningApplication.PNG" width="600">
+1. Main game: Run batch script PlayGame.bat
+2. Unit tests: Executable found under Release folder
+3. Debug with console scripts are in DebugConsoleScripts folder
 
 ## Authors
 
