@@ -25,13 +25,14 @@ Very helpfull guide for combining C++ and Python in VS: [Create a C++ extension 
    1. In BuildAll.bat replace folder path VSDEVDIR with your path
    1. In CleanAll.bat replace folder path VSDEVDIR with your path
 
-Done!:
-Run batch script: BuildAll
-Run Batch script: PlayGame
+Done!
+Run batch script BuildAll
+Run Batch script PlayGame
+
 Should look like this when done correctly:
 
 <img src="images/RunningApplication.PNG" width="600">
 
 ## Authors
 
-* **Even Elshaug Almås** - *Initial work* - [Evenalm](https://github.com/Evenalm)
+* **Even Elshaug Almås** - *Author* - [Evenalm](https://github.com/Evenalm)
