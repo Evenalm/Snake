@@ -31,7 +31,7 @@ Very helpfull guide for combining C++ and Python in VS: [Create a C++ extension 
 ## Run and build
 Run batch script BuildAll.bat
 
-1. Main game: Run batch script PlayGame.bat
+1. Main game: Run batch script PlayGame.bat or go to executables and start SnakeUI
 2. Unit tests: Executable found under Release folder
 3. Debug with console scripts are in DebugConsoleScripts folder
 
