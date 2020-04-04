@@ -70,7 +70,4 @@ int main(int argc, char** argv)
             break;
         }
     }
-
-    output.release();
-    input.release();
 }
