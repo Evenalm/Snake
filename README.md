@@ -28,7 +28,8 @@ Python environments and packages can be installed directly in VS. Very helpfull 
 		1. Python\include folder
 		1. Python\libs folder
 		1. Python\Scripts folder
-		
+<img src="images/EnvironmentVariables.PNG" width="800">
+	
 ### Running scripts
 The devenv and python install directory is set by VS, if VS was installed in default directory and python w/ packages was installed using it then the path variables do not change. If a costum installation was used then these variables have to be set.
 
