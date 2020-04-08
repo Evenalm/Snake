@@ -55,14 +55,19 @@ PYBIND11_MODULE(SnakePort, m)
         .def("GetBoardHeight", &GameState::GetBoardHeight)
         .def("GetFruit", &GameState::GetFruit)
         .def("GetHead", &GameState::GetHead)
-        .def("GetHead", &GameState::GetTail)
+        .def("GetTail", &GameState::GetTail)
         .def("GetSnakeBody", &GameState::GetSnakeBody)
         .def("GetCellType", &GameState::GetCellType)
+        .def("MoveAsInt", &GameState::MoveAsInt)
+        .def("CellTypeAsInt", &GameState::CellTypeAsInt)
+        .def("OrientationAsInt", &GameState::OrientationAsInt)
         .def("GetOrientation", &GameState::GetOrientation);
 
     py::object invalidP = py::cast(InvalidGamePoint);
     m.attr("InvalidGamePoint") = invalidP;
 
+    m.def("GetNextPoint", &GetNextPoint, "Get the next point using the given move");
+   
     m.def("GetMinimalistMove", &GetMinimalistMove, "Move using only left right arrow");
 
     py::class_<MoveMaker> moveMaker(m, "MoveMaker");

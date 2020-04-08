@@ -5,9 +5,9 @@ from SnakePort import HamiltonianPath
 from SnakePort import GetMinimalistMove
 from Buttons import *
 
-class MyGame(arcade.Window):
-    def __init__(self, title, colour):
-        self.numberOfTiles = 32
+class SnakeUI(arcade.Window):
+    def __init__(self, title, colour, display_menu, game_size, play_style):
+        self.numberOfTiles = game_size
         self.tileSize = 18
         self.gridSize = 20
         self.boxSize = 14
@@ -17,9 +17,11 @@ class MyGame(arcade.Window):
         super().__init__(self.screenWidth, self.screenHeight, title)
         arcade.set_background_color(colour)
         self.moveDecitionTime = 0.1
-        self.nextPlayStyle = PlayStyle.Normal
-        self.setup_theme()
-        self.set_buttons()
+        self.nextPlayStyle = play_style
+        self.display_menu = display_menu
+        if(self.display_menu):
+            self.setup_theme()
+            self.set_buttons()
         self.reset_game()
         self.isGameRunning = False
 
@@ -94,21 +96,26 @@ class MyGame(arcade.Window):
 
         #Rescale windows and buttons
         self.rel_font_size = self.numberOfTiles / 32
-        self.screenOffset = self.gridSize
         self.screenWidth = self.gridSize * self.numberOfTiles + self.screenOffset
-        self.screenHeight = self.screenWidth + (2 * self.gridSize)
+        self.screenHeight = self.screenWidth
+
+        displayWidth = self.screenWidth
+        if(self.display_menu):
+            self.screenHeight += (2 * self.gridSize)
+            displayWidth = max(self.screenWidth, 400)
+            self.button_list[0].center_y = self.screenHeight - 11
+            self.button_list[1].center_y = self.screenHeight - 36
+            self.button_list[2].center_y = self.screenHeight - 11
+            self.button_list[3].center_y = self.screenHeight - 36
+            self.button_list[4].center_y = self.screenHeight - 11
+            self.button_list[5].center_y = self.screenHeight - 36
+            self.button_list[6].center_y = self.screenHeight - 25
+            self.button_list[7].center_y = self.screenHeight - 11
+            self.button_list[8].center_y = self.screenHeight - 36
+            self.button_list[9].center_y = self.screenHeight - 25
+        
+        self.set_size(displayWidth, self.screenHeight);
         self.setup()
-        self.set_size(max(self.screenWidth, 400), self.screenHeight);
-        self.button_list[0].center_y = self.screenHeight - 11
-        self.button_list[1].center_y = self.screenHeight - 36
-        self.button_list[2].center_y = self.screenHeight - 11
-        self.button_list[3].center_y = self.screenHeight - 36
-        self.button_list[4].center_y = self.screenHeight - 11
-        self.button_list[5].center_y = self.screenHeight - 36
-        self.button_list[6].center_y = self.screenHeight - 25
-        self.button_list[7].center_y = self.screenHeight - 11
-        self.button_list[8].center_y = self.screenHeight - 36
-        self.button_list[9].center_y = self.screenHeight - 25
 
     def on_draw(self):
         arcade.start_render()
@@ -183,7 +190,7 @@ class MyGame(arcade.Window):
             self.wasMoveMade = True
 
 def main():
-    game = MyGame("Python C++ Snake", arcade.color.OXFORD_BLUE)
+    game = SnakeUI("Python C++ Snake", arcade.color.OXFORD_BLUE, True, 32, PlayStyle.Normal)
     arcade.run()
 
 if __name__ == "__main__":

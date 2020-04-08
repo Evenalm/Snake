@@ -10,7 +10,10 @@ class GameState
 	public:
 		enum class Move { Up, Left, Right, Down, Count };
 		enum class CellType { Wall, Open, Body, Fruit };
-        enum class Orientation { North, South, East, West };
+		enum class Orientation { North, South, East, West };
+		static int MoveAsInt(Move move) { return (int)move; };
+		static int CellTypeAsInt(CellType type) { return (int)type; };
+		static int OrientationAsInt(Orientation ori) { return (int)ori; };
 
 		GameState(unsigned short widht = 3, unsigned short height = 3);
 		GameState(std::deque<Point> currentPositions, Point goal, unsigned short boardSize);
