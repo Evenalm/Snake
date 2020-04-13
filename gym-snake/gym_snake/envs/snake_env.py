@@ -12,6 +12,8 @@ class SnakeEnv(gym.Env):
 	
 	def __init__(self, game_size = 8):
 		self.game = GameState(game_size, game_size)
+
+		# Create a start state to copy to make new iterations faster
 		self.start_state = []
 		for i in range(game_size):
 			self.start_state += [[]]
@@ -24,15 +26,21 @@ class SnakeEnv(gym.Env):
 			self.start_state[bodyPoint.X][bodyPoint.Y] = bodySize
 			bodySize -= 1	
 		
+		fruit = self.game.GetFruit()
+		if(InvalidGamePoint != fruit):
+			self.start_state[fruit.X][fruit.Y] = -1
+
 		self.state = self.start_state.copy()
 		
+		# Setup Gym
 		self.action_space = spaces.Discrete(GameState.MoveAsInt(GameState.Move.Count))
 		self.observation_space = spaces.Box(low=-1, high=self.game.GetBoardSize(), shape=(game_size, game_size), dtype=np.int)
 		self.done = False
 		self.reward_func = None
-		self.rewards = [ -5, 1 / game_size * game_size, -5, 0.5, 0.5, -5 ]
+		self.rewards = [ -5.0, 1.0 / (game_size * game_size), -5.0, 0.5, 0.5, -5.0 ]
 		self.reward_range = (min(self.rewards) * 2, max(self.rewards) * 2)
 		self.reward = 0
+		self.info = {}
 
 	def set_rewards(self, rewards, min, max, func = None):
 		self.rewards = rewards
@@ -55,7 +63,7 @@ class SnakeEnv(gym.Env):
 		
 		self.update_state(oldTail)
 
-		return [self.state, self.reward, self.done, self.game]
+		return [self.state, self.reward, self.done, self.info]
 
 	def update_state(self, oldTail):
 		if(self.done): 
@@ -80,7 +88,7 @@ class SnakeEnv(gym.Env):
 		self.done = False;
 		return self.state
 
-	def render(self):
+	def render(self, step):
 		if(self.done): 
 			return
 			

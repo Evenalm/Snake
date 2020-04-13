@@ -3,14 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Snake", "..\Snake\Snake\Snake.vcxproj", "{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SnakePort", "SnakePort\SuperFast2.vcxproj", "{BE87AE6E-9C19-41F8-93E1-86D35B4DECF9}"
 	ProjectSection(ProjectDependencies) = postProject
 		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF} = {24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}
 	EndProjectSection
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonGui", "PythonProject\PythonGui.pyproj", "{EB2ABAFF-9E83-4430-8C9F-1C7528B7C680}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Snake", "Snake\Snake.vcxproj", "{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,21 +25,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.Debug|x64.ActiveCfg = Debug|x64
-		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.Debug|x64.Build.0 = Debug|x64
-		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.Debug|x86.ActiveCfg = Debug|Win32
-		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.Debug|x86.Build.0 = Debug|Win32
-		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.DebugUnitTest|Any CPU.ActiveCfg = DebugUnitTest|Win32
-		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.DebugUnitTest|x64.ActiveCfg = DebugUnitTest|x64
-		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.DebugUnitTest|x64.Build.0 = DebugUnitTest|x64
-		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.DebugUnitTest|x86.ActiveCfg = DebugUnitTest|Win32
-		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.DebugUnitTest|x86.Build.0 = DebugUnitTest|Win32
-		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.Release|Any CPU.ActiveCfg = Release|Win32
-		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.Release|x64.ActiveCfg = Release|x64
-		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.Release|x64.Build.0 = Release|x64
-		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.Release|x86.ActiveCfg = Release|Win32
-		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.Release|x86.Build.0 = Release|Win32
 		{BE87AE6E-9C19-41F8-93E1-86D35B4DECF9}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{BE87AE6E-9C19-41F8-93E1-86D35B4DECF9}.Debug|x64.ActiveCfg = Debug|x64
 		{BE87AE6E-9C19-41F8-93E1-86D35B4DECF9}.Debug|x64.Build.0 = Debug|x64
@@ -65,6 +50,21 @@ Global
 		{EB2ABAFF-9E83-4430-8C9F-1C7528B7C680}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB2ABAFF-9E83-4430-8C9F-1C7528B7C680}.Release|x64.ActiveCfg = Release|Any CPU
 		{EB2ABAFF-9E83-4430-8C9F-1C7528B7C680}.Release|x86.ActiveCfg = Release|Any CPU
+		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.Debug|x64.ActiveCfg = Debug|x64
+		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.Debug|x64.Build.0 = Debug|x64
+		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.Debug|x86.ActiveCfg = Debug|Win32
+		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.Debug|x86.Build.0 = Debug|Win32
+		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.DebugUnitTest|Any CPU.ActiveCfg = DebugUnitTest|Win32
+		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.DebugUnitTest|x64.ActiveCfg = DebugUnitTest|x64
+		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.DebugUnitTest|x64.Build.0 = DebugUnitTest|x64
+		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.DebugUnitTest|x86.ActiveCfg = DebugUnitTest|Win32
+		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.DebugUnitTest|x86.Build.0 = DebugUnitTest|Win32
+		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.Release|Any CPU.ActiveCfg = Release|Win32
+		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.Release|x64.ActiveCfg = Release|x64
+		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.Release|x64.Build.0 = Release|x64
+		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.Release|x86.ActiveCfg = Release|Win32
+		{24CE4BD5-EAF4-4E06-AC23-8CBC2DD0DEFF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
